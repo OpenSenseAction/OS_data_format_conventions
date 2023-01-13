@@ -1,6 +1,6 @@
 name: OS_format_conventions
 channels:
-  - conda-forge
+ - conda-forge
 dependencies:
  - numpy
  - pandas
