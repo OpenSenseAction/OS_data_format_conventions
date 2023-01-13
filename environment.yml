@@ -1,0 +1,8 @@
+name: OS_format_conventions
+channels:
+  - conda-forge
+dependencies:
+ - numpy
+ - pandas
+ - xarray
+ - netcdf4
