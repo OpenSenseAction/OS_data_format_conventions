@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/OpenSenseAction/OS_data_format_conventions/HEAD)
+
 ## OpenSense data format conventions
 In this repository code and example files to illustrate standard data formats and naming conventions derived from the [OpenSense Action](https://opensenseaction.eu/) 
 are collected.    
