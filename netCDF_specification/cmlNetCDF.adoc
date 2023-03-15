@@ -1,5 +1,5 @@
 
-== NetCdf file structure for CML data
+== netCdf file structure for CML data
 
 The netCDF file for CML data is split over three dimensions: time period (time), CML identifier (cml_id), and sublink identifier/s (sublink_id). Global attributes follow specification for OS global attributes.
 
