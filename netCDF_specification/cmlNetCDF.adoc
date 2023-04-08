@@ -9,7 +9,7 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 |===============
 ||Type|Attributes|Requisite|Comments
 
-| Dimensions:| | | | 
+| *Dimensions*| | | | 
 
 | time| | | | Unlimited size, enforce UTC seconds since 1970-01-01
 
@@ -18,7 +18,7 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 | sublink_id| | | | Minimum length is 1
 
 
-| Coordinate variables (dimension):| | | | 
+| *Coordinate variables (dimension)*| | | | 
 
 | time (time)| int/float/double| units = "seconds since 1970-01-01 00:00:00", long_name = “time_utc”, missing_value| Required| 
 
@@ -27,7 +27,7 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 | sublink_id (sublink_id)| string| long_name = “sublink_identifier”| Required| sublink_id does not have to be unique across the network (but unique within each CML)
 
 
-| Auxiliary coordinate variables (dimension)| | | |
+| *Auxiliary coordinate variables (dimension)*| | | |
 
 | site_0_lat (cml_id)| float/double| units = degrees_in_WGS84_projection, long_name = “site_0_latitude”| Required| 
 
@@ -52,7 +52,7 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 | polarisation (cml_id, sublink_id)| string| units = no units, long_name = “sublink_polarization”| Recommended| When string then ‘vertical’ or ‘horizontal’
 
 
-| Data variables (dimension)| | | | 
+| *Data variables (dimension)*| | | | 
 
 | tsl (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "transmitted_signal_level", missing_value| Required*| 
 
@@ -60,19 +60,19 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 
 | tsl_max (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "maximum_transmitted_signal_level_over_time_window", missing_value| Optional| 
 
-|tsl_min (cml_id,sublink_id, time) |float/double| units = dBm| coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "minimum_transmitted_signal_level_over_time_window", missing_value| Optional| 
+| tsl_min (cml_id,sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "minimum_transmitted_signal_level_over_time_window", missing_value| Optional| 
 
-|tsl_avg (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "averaged_transmitted_signal_level_over_time_window", missing_value| Optional| 
+| tsl_avg (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "averaged_transmitted_signal_level_over_time_window", missing_value| Optional| 
 
-|tsl_inst (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "instantaneous_transmitted_signal_level", missing_value| Optional| 
+| tsl_inst (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "instantaneous_transmitted_signal_level", missing_value| Optional| 
 
-|rsl_max (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "maximum_received_signal_level_over_time_window", missing_value| Optional| 
+| rsl_max (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "maximum_received_signal_level_over_time_window", missing_value| Optional| 
 
-|rsl_min (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string with metadata variable_names, long_name = "minimum_received_signal_level_over_time_window", missing_value| Optional| 
+| rsl_min (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string with metadata variable_names, long_name = "minimum_received_signal_level_over_time_window", missing_value| Optional| 
 
 | rsl_avg (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "averaged_received_signal_level_over_time_window", missing_value| Optional| 
 
-|rsl_inst (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "instantaneous_received_signal_level", missing_value| Optional| 
+| rsl_inst (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "instantaneous_received_signal_level", missing_value| Optional| 
 
 |temperature_0** (cml_id, time)| float/double| units = degrees_of_celsius, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = “sensor_temperature_at_site_0”| Optional| 
 
