@@ -58,19 +58,17 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 
 | rsl (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "received_signal_level", missing_value| Required*| 
 
-| tsl_max (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names| long_name = "maximum_transmitted_signal_level_over_time_window", missing_value| Optional| 
+| tsl_max (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "maximum_transmitted_signal_level_over_time_window", missing_value| Optional| 
 
-|tsl_min (cml_id,sublink_id, time)
+|tsl_min (cml_id,sublink_id, time) |float/double| units = dBm| coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "minimum_transmitted_signal_level_over_time_window", missing_value| Optional| 
 
-|float/double| units = dBm| coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "minimum_transmitted_signal_level_over_time_window", missing_value| Optional| 
-
-|tsl_avg (cml_id, sublink_id, time)| float/double units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "averaged_transmitted_signal_level_over_time_window", missing_value| Optional| 
+|tsl_avg (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "averaged_transmitted_signal_level_over_time_window", missing_value| Optional| 
 
 |tsl_inst (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "instantaneous_transmitted_signal_level", missing_value| Optional| 
 
-|rsl_max (cml_id, sublink_id, time)| float/double| units = dBm| coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "maximum_received_signal_level_over_time_window", missing_value| Optional| 
+|rsl_max (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "maximum_received_signal_level_over_time_window", missing_value| Optional| 
 
-|rsl_min (cml_id, sublink_id, time)| float/double| units = dBm| coordinates = string with metadata variable_names, long_name = "minimum_received_signal_level_over_time_window", missing_value| Optional| 
+|rsl_min (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string with metadata variable_names, long_name = "minimum_received_signal_level_over_time_window", missing_value| Optional| 
 
 | rsl_avg (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "averaged_received_signal_level_over_time_window", missing_value| Optional| 
 
