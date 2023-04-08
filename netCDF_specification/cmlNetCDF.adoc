@@ -5,7 +5,7 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 
 [[table-cml-netCDF-specification]]
 .cml netCDF specification
-[options="header",cols="3,2,6,2,2",caption="Table 2 "]
+[options="header",cols="2,2,2,2,2",caption="Table 2 "]
 |===============
 ||Type|Attributes|Requisite|Comments
 
