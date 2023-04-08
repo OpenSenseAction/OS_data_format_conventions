@@ -83,5 +83,5 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 
 *It is recommended to store both TSL and RSL, however, when TSL or RSL is maintained as constant, only the variable which is changing is required.
 
-** Names of variables related to site conditions, such as temperature, should be distinguished by suffixes 0 and 1.
+**Names of variables related to site conditions, such as temperature, should be distinguished by suffixes 0 and 1.
 
