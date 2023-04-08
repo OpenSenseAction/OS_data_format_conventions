@@ -52,9 +52,9 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 | polarisation (cml_id, sublink_id)| string| units = no units, long_name = “sublink_polarization”| Recommended| When string then ‘vertical’ or ‘horizontal’
 
 
-| Data variables (dimension)| | | |
+| Data variables (dimension)| | | | 
 
-tsl (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "transmitted_signal_level", missing_value| Required*| 
+| tsl (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "transmitted_signal_level", missing_value| Required*| 
 
 
 
