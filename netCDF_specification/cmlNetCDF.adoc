@@ -78,6 +78,10 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 
 |temperature_1** (cml_id, time)| float/double| units = degrees_of_celsius, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = “sensor_temperature_at_site_1”| Optional| 
 
-
-
 |===============
+
+
+*It is recommended to store both TSL and RSL, however, when TSL or RSL is maintained as constant, only the variable which is changing is required.
+
+** Names of variables related to site conditions, such as temperature, should be distinguished by suffixes 0 and 1.
+
