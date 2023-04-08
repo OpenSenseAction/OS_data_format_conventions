@@ -24,7 +24,7 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 
 | cml_id (cml_id)| string| long_name = “commercial_microwave_link_identifier”| Required| cml_id has to be unique across the network
 
-| sublink_id (sublink_id)| string long_name = “sublink_identifier”| Required| sublink_id does not have to be unique across the network (but unique within each CML)
+| sublink_id (sublink_id)| string| long_name = “sublink_identifier”| Required| sublink_id does not have to be unique across the network (but unique within each CML)
 
 
 | Auxiliary coordinate variables (dimension)| | | |
