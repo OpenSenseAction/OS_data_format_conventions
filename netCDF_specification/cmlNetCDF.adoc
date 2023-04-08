@@ -7,9 +7,9 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 .cml netCDF specification
 [options="header",cols="3,2,6,2,2",caption="Table 2 "]
 |===============
-|  | Type | Attributes | Requisite | Comments
+||Type|Attributes|Requisite|Comments
 
-| Dimensions: |  |  |  | 
+|Dimensions:|||| 
 
 |time||||Unlimited size, enforce UTC seconds since 1970-01-01
 
@@ -17,7 +17,37 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 
 |sublink_id||||Minimum length is 1
 
-|Coordinate variables (dimension):|||| 
+|Coordinate variables (dimension):||||
 
-| time (time) | int/float/double | units = "seconds since 1970-01-01 00:00:00" long_name = “time_utc” missing_value | Required | 
+|time (time)|int/float/double|units = "seconds since 1970-01-01 00:00:00" long_name = “time_utc” missing_value|Required|
+
+Coordinate variables (dimension)| | | | 
+time (time)|int/float/double| units = "seconds since 1970-01-01 00:00:00", long_name = “time_utc” missing_value| Required| 
+
+cml_id (cml_id)| string long_name = “commercial_microwave_link_identifier”| Required| cml_id has to be
+unique across the network
+
+sublink_id (sublink_id)| string long_name = “sublink_identifier”| Required| sublink_id does not have to be unique across the network (but unique within each CML)
+
+Auxiliary coordinate variables (dimension)| | | |
+site_0_lat (cml_id)| float/double| units = degrees_in_WGS84_projection, long_name = “site_0_latitude”| Required| 
+
+site_0_lon (cml_id)| float/double| units = degrees_in_WGS84_projection, long_name = “site_0_longitude”| Required| 
+
+site_0_elev (cml_id)| float/double| units = metres_above_sea, long_name = “ground_elevation_above_sea_level_at_site_0”| Optional|
+
+site_0_alt (cml_id)| float/double| units = metres_above_sea| long_name = “antenna_altitude_above_sea_level_at_site_0”| Recommended|
+
+site_1_lat (cml_id)| float/double| units = degrees_in_WGS84_projection, long_name = “site_1_latitude”| Required| 
+
+site_1_lon (cml_id)| float/double| units = degrees_in_WGS84_projection, long_name = “site_1_longitude”| Required| 
+
+site_1_elev (cml_id)| float/double| units = metres_above_sea, long_name = “ground_elevation_above_sea_level_at_site_1”| Optional| 
+
+site_1_alt (cml_id)| float/double| units = metres_above_sea, long_name = ”antenna_altitude_above_sea_level_at_site_1”| Recommended| 
+
+length (cml_id)| float/double| units = m, long_name = “distance_between_pair_of_antennas”| Optional| 
+
+frequency (cml_id, sublink_id)| float/double units = MHz, long_name = “sublink_frequency”| Required| 
+
 |===============
