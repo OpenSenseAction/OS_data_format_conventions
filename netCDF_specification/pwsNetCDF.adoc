@@ -1,0 +1,59 @@
+== netCdf file structure for PWS data
+
+The netCDF file for PWS data has two dimensions: a time stamp (time) and a PWS identifier (id). Creating one file with multiple PWSs stored along the id dimension is recommended only if PWS data have the same time stamps. For PWS that start later in the period specified by the time dimension, the first intervals are filled with NA-values. If PWS time stamps differ, it is recommended to store each PWS in a netCDF group (supported by netCDF-4) or to create a file for each PWS. If the optional data consisting of additional meteorological variables have a different time stamp, it is recommended to interpolate these variables at the timestamps of the rainfall data to have a structured fixed time series. 
+
+[[table-pws-netCDF-specification]]
+.pws netCDF specification
+[options="header",cols="2,2,2,2,2", caption="Table 2 "]
+|===
+||Type|Attributes|Requisite|Comments
+
+| *Dimensions*| | | | 
+
+| time| | | | Unlimited size, enforce UTC seconds since 1970-01-01
+
+| id| | | | 
+
+
+| *Coordinate variables (dimension)*| | | | 
+
+| time (time)| int/float/double| units = s, long_name = “time_utc”, missing_value | Required |
+
+| id (id)| string| long_name = “personal_weather_station_identifier”| Required| id has to be unique across the network
+
+
+| *Auxiliary coordinate variables (dimension)*| | | | 
+
+| latitude (id)| float/double| units = degrees in WGS84 projection| Required| 
+
+| longitude (id)| float/double| units = degrees in WGS84 projection| Required| 
+
+| elevation (id)| float/double| units = metres_above_sea| Recommended| 
+
+| Height_above ground_level (id)| float/double| units = metres| Recommended| 
+
+| Environmental_class (id)| integer| no unit| Recommended| 
+
+| hardware (id)| string| long_name = “manufactuer_and_model_type”| Optional| e.g. manufacturer, station type, sensor types
+
+
+| *Data variables (dimension)*| | | |
+
+| rainfall_amount (id, time)| long_name = “rainfall_amount_per_time_unit”, units = mm, coordinates = string_with_auxiliary_coordinate_variable_names| Required| 
+
+
+| *Optional data (dimension)*| | | |
+
+| temperature (id, time)| float/double| units = degrees_celsius| Optional| 
+
+| relative_humidity (id, time)| float/double| units = %| Optional| 
+
+| wind_velocity (id, time)| float/double| units = ms-1 | Optional| 
+
+| wind_direction (id, time)| float/double| units = degrees| Optional| 
+
+| air_pressure (id, time)| float/double| units = hPa| Optional| 
+
+
+|===
+
