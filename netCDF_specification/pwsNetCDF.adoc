@@ -39,7 +39,7 @@ The netCDF file for PWS data has two dimensions: a time stamp (time) and a PWS i
 
 | *Data variables (dimension)*| | | |
 
-| rainfall_amount (id, time)| long_name = “rainfall_amount_per_time_unit”, units = mm, coordinates = string_with_auxiliary_coordinate_variable_names| Required| 
+| rainfall_amount (id, time)| float/double| long_name = “rainfall_amount_per_time_unit”, units = mm, coordinates = string_with_auxiliary_coordinate_variable_names| Required| 
 
 
 | *Optional data (dimension)*| | | |
