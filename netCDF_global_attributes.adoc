@@ -1,0 +1,22 @@
+== Global attributes common to CML, SML and PWS
+
+The netCDF file for CML data is split over three dimensions: time period (time), CML identifier (cml_id), and sublink identifier/s (sublink_id). Global attributes follow specification for OS global attributes.
+
+[[table-cml-netCDF-specification]]
+.cml netCDF specification
+[options="header",cols="2,2", caption="Table 1"]
+|===============
+||Name|Description
+
+| title| brief description of what is inside the dataset 
+| file_author(s)| who produced the data
+| institution| where the dataset was produced
+| date| when the dataset was created
+| source| the method of production of the original data. If it is model-generated, the source should include the model and its version. If data are gathered from observations, the source record should characterise it (e.g., "surface observation" or "radiosonde").
+| history| any modification of the data; the timestamp should be provided for each modification.
+| naming convention| the conventional name for OS data is OpenSense-X.
+| licence restrictions| under which licence the data are available.
+| reference| data source or doi, if available.
+| comment| diverse information about the dataset (e.g., precision of coordinates, the time period of the campaign)
+
+|===============
