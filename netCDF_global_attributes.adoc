@@ -2,11 +2,11 @@
 
 The netCDF file for CML data is split over three dimensions: time period (time), CML identifier (cml_id), and sublink identifier/s (sublink_id). Global attributes follow specification for OS global attributes.
 
-[[table-cml-netCDF-specification]]
-.cml netCDF specification
+[[table-global-attributes]]
+.global attributes
 [options="header",cols="2,2", caption="Table 1"]
 |===============
-||Name|Description
+|Name |Description
 
 | title| brief description of what is inside the dataset 
 | file_author(s)| who produced the data
