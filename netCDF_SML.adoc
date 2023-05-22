@@ -46,4 +46,4 @@ The netCDF file for SML data is split over the following dimensions: time period
 
 |===
 
-*It is required to store either SNR or RSL.
+*It is required to store either SNR or rsl.
