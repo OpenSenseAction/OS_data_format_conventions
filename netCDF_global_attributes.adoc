@@ -4,7 +4,7 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 
 [[table-global-attributes]]
 .global attributes
-[options="header",cols="2,2", caption="Table 1"]
+[options="header",cols="2,2", caption="Table 1 "]
 |===============
 |Name |Description
 
