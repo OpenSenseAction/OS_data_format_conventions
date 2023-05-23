@@ -4,19 +4,19 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 
 [[table-global-attributes]]
 .global attributes
-[options="header",cols="2,2", caption="Table 1 "]
+[options="header",cols="2,2,2", caption="Table 1 "]
 |===============
-|Attribute name |Specification
+|Attribute name |Specification |Requisite
 
-| title| brief description of what is inside the dataset 
-| file_author(s)| who produced the data
-| institution| where the dataset was produced
-| date| when the dataset was created
-| source| the method of production of the original data. If it is model-generated, the source should include the model and its version. If data are gathered from observations, the source record should characterise it (e.g., "surface observation" or "radiosonde").
-| history| any modification of the data; the timestamp should be provided for each modification.
-| naming convention| the conventional name for OS data is OpenSense-X.
-| licence restrictions| under which licence the data are available.
-| reference| data source or doi, if available.
-| comment| diverse information about the dataset (e.g., precision of coordinates, the time period of the campaign)
+| title| brief description of what is inside the dataset| Recommended  
+| file_author(s)| who produced the data| Recommended 
+| institution| where the dataset was produced| Recommended 
+| date| when the dataset was created| Recommended 
+| source| the method of production of the original data. If it is model-generated, the source should include the model and its version. If data are gathered from observations, the source record should characterise it (e.g., "surface observation" or "radiosonde").| Recommended 
+| history| any modification of the data; the timestamp should be provided for each modification.| Recommended
+| naming convention| the conventional name for OS data is OpenSense-X.| Recommended
+| licence restrictions| under which licence the data are available.| Recommended
+| reference| data source or doi, if available.| Optional
+| comment| diverse information about the dataset (e.g., precision of coordinates, the time period of the campaign)| Optional
 
 |===============
