@@ -6,7 +6,7 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 .global attributes
 [options="header",cols="2,2", caption="Table 1 "]
 |===============
-|Name |Description
+|Attribute name |Specification
 
 | title| brief description of what is inside the dataset 
 | file_author(s)| who produced the data
