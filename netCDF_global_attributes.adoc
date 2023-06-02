@@ -1,7 +1,5 @@
 == Global attributes common to CML, SML and PWS
 
-The netCDF file for CML data is split over three dimensions: time period (time), CML identifier (cml_id), and sublink identifier/s (sublink_id). Global attributes follow specification for OS global attributes.
-
 [[table-global-attributes]]
 .global attributes
 [options="header",cols="2,2,2", caption="Table 1 "]
