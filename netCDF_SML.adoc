@@ -30,7 +30,7 @@ The netCDF file for SML data is split over the following dimensions: time period
 | site_0_elev (sml_id)| float/double| units = metres_above_sea, long_name = “ground_elevation_above_sea_level_at_site_0”| Optional|  
 | site_0_alt (sml_id)| float/double| units = metres_above_sea, long_name = ”antenna_altitude_above_sea_level_at_site_0”| Required| 
 | site_1_lon (sml_id)| float/double| units = degrees_in_WGS84_projection, long_name = “site_1_longitude”| Required| 
-| site_1_elev (sml_id)| float/double| units = metres_above_sea, long_name = “ground_elevation_above_sea_level_at_site_1”| Optional| 36,000 km 
+| site_1_alt (sml_id)| float/double| units = metres_above_sea, long_name = “ground_elevation_above_sea_level_at_site_1”| Optional| 36,000 km 
 | frequency (sml_id, sublink_id)| float/double| units = MHz, long_name = “sublink_frequency”| Required| 
 | polarisation (sml_id, sublink_id)| string| units = no units, long_name = “sublink_polarization”| Required| When string then ‘vertical’ or ‘horizontal’
 
