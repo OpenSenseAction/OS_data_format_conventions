@@ -59,7 +59,7 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 
 | rsl (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "received_signal_level", sampling =  'instantaneous', missing_value| Required*| 
 
-5+| _Specification for for min/max sampling (NMS DAQ)_
+5+| _Specification for min/max sampling (NMS DAQ)**_
 
 | tsl_max (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "maximum_transmitted_signal_level_over_time_window",  sampling =  'aggregated', missing_value| Required*| 
 
@@ -74,14 +74,15 @@ The netCDF file for CML data is split over three dimensions: time period (time),
 | rsl_avg (cml_id, sublink_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "averaged_received_signal_level_over_time_window",  sampling =  'aggregated', missing_value| Optional| 
 
 
-|temperature_0** (cml_id, time)| float/double| units = degrees_of_celsius, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = “sensor_temperature_at_site_0”| Optional| 
+|temperature_0*** (cml_id, time)| float/double| units = degrees_of_celsius, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = “sensor_temperature_at_site_0”| Optional| 
 
-|temperature_1** (cml_id, time)| float/double| units = degrees_of_celsius, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = “sensor_temperature_at_site_1”| Optional| 
+|temperature_1*** (cml_id, time)| float/double| units = degrees_of_celsius, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = “sensor_temperature_at_site_1”| Optional| 
 
 |===============
 
 
 *It is recommended to store both TSL and RSL, however, when TSL or RSL is maintained as constant, only the variable which is changing is required.
 
-**Names of variables related to site conditions, such as temperature, should be distinguished by suffixes 0 and 1.
+** if other aggregation satistics is used (e.g. mean, median), create a variable rsl_nameOfAggregationStatistics/tsl_nameOfAggregationStatistics and specify details in the global attribute 'comment'
+***Names of variables related to site conditions, such as temperature, should be distinguished by suffixes 0 and 1.
 
