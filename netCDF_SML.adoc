@@ -27,7 +27,8 @@ The netCDF file for SML data is split over the following dimensions: time period
 | *Auxiliary coordinate variables (dimension)*| | | | 
 | site_0_lat (sml_id)| float/double| units = degrees_in_WGS84_projection, long_name = “site_0_latitude”| Required| 
 | site_0_lon (sml_id)| float/double| units = degrees_in_WGS84_projection, long_name = “site_0_longitude”| Required| 
-| site_0_alt (sml_id)| float/double| units = metres_above_sea, long_name = ”antenna_altitude_above_sea_level_at_site_0”| Required| 
+| site_0_alt (sml_id)| float/double| units = degrees_in_WGS84_projection, long_name = ”antenna_altitude_above_sea_level_at_site_0”| Required| 
+| site_1_lat (sml_id)| float/double| units = degrees_in_WGS84_projection, long_name = “site_0_latitude”| Optional| 0 degrees 
 | site_1_lon (sml_id)| float/double| units = degrees_in_WGS84_projection, long_name = “site_1_longitude”| Required| 
 | site_1_alt (sml_id)| float/double| units = metres_above_sea, long_name = “ground_elevation_above_sea_level_at_site_1”| Optional| 36,000 km 
 | frequency (sml_id, sublink_id)| float/double| units = MHz, long_name = “sublink_frequency”| Required| 
