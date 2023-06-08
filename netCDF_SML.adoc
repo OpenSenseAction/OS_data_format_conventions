@@ -4,7 +4,7 @@ The netCDF file for SML data is split over the following dimensions: time period
 
 [[table-sml-netCDF-specification]]
 .sml netCDF specification
-[options="header",cols="2,2,2,2,2", caption="Table 2 "]
+[options="header",cols="2,2,2,2,2", caption="Table 3 "]
 |===
 ||Type|Attributes|Requisite|Comments
 
