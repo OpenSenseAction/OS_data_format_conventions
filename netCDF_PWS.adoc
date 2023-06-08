@@ -4,7 +4,7 @@ The netCDF file for PWS data has two dimensions: a time stamp (time) and a PWS i
 
 [[table-pws-netCDF-specification]]
 .pws netCDF specification
-[options="header",cols="2,2,2,2,2", caption="Table 2 "]
+[options="header",cols="2,2,2,2,2", caption="Table 3 "]
 |===
 ||Type|Attributes|Requisite|Comments
 
