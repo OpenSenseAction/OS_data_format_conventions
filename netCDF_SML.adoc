@@ -19,7 +19,7 @@ The netCDF file for SML data is split over the following dimensions: time period
 
 | *Coordinate variables (dimension)*| | | | 
 
-| time (time)| int/float/double| units = seconds since 1970-01-01 00:00:00 UTC, long_name = “time_utc”, missing_value | Required |
+| time (time)| int/float/double| units = seconds since 1970-01-01 00:00:00 UTC, long_name = “time_utc”, _FillValue | Required |
 
 | sml_id (sml_id)| string| long_name = “satellite_microwave_link_identifier” |Required| sml_id has to be unique across the link. It includes: receiver_id, satellite_id, trasponder_id 
 | sublink_id (sublink_id)| string| long_name = “sublink_identifier”, |Required | sublink_id does not have to be unique across the network (but unique within each SML)
@@ -36,8 +36,8 @@ The netCDF file for SML data is split over the following dimensions: time period
 
 | *Data variables (dimension)*| | | | 
 
-| snr (sml_id, time)| float/double| units = dB, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "signal_to_noise_ratio", missing_value| Required*| 
-| rsl (sml_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "received_signal_level", missing_value| Required*| 
+| snr (sml_id, time)| float/double| units = dB, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "signal_to_noise_ratio", _FillValue| Required*| 
+| rsl (sml_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "received_signal_level", _FillValue| Required*| 
 | modcod (sml_id, time)| string| long_name = “modcod_format”| Optional| 
 
 
