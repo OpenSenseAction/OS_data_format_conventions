@@ -36,6 +36,7 @@ The netCDF file for SML data is split over the following dimensions: time period
 
 | *Data variables (dimension)*| | | | 
 
+
 | snr (sml_id, time)| float/double| units = dB, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "signal_to_noise_ratio", _FillValue| Required*| 
 | rsl (sml_id, time)| float/double| units = dBm, coordinates = string_with_auxiliary_coordinate_variable_names, long_name = "received_signal_level", _FillValue| Required*| 
 | modcod (sml_id, time)| string| long_name = “modcod_format”| Optional| 
