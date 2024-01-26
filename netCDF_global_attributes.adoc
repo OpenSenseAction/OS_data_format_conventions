@@ -7,14 +7,15 @@
 |Attribute name |Specification |Requisite
 
 | title| brief description of what is inside the dataset| Recommended  
-| file_author(s)| who produced the data| Recommended 
+| file_author(s)| who produced the data and contact| Recommended 
 | institution| where the dataset was produced| Recommended 
 | date| when the dataset was created| Recommended 
-| source| the method of production of the original data. If it is model-generated, the source should include the model and its version. If data are gathered from observations, the source record should characterise it (e.g., "surface observation" or "radiosonde").| Recommended 
-| history| any modification of the data; the timestamp should be provided for each modification.| Recommended
-| naming convention| the conventional name for OS data is OpenSense-X.| Recommended
-| licence restrictions| under which licence the data are available.| Recommended
-| reference| data source or doi, if available.| Optional
+| source| the method of production of the original data. If it is model-generated, the source should include the model and its version. If data are gathered from observations, the source record should characterise it (e.g., "surface observation" or "radiosonde")| Recommended 
+| version| version of the dataset (version number or name)| Recommended
+| history| any modification of the data; the timestamp should be provided for each modification| Recommended
+| naming convention| the conventional name for OS data is OpenSense-X| Recommended
+| licence| under which licence the data are available| Recommended
+| reference| data source or doi, if available| Optional
 | comment| diverse information about the dataset (e.g., precision of coordinates, the time period of the campaign)| Optional
 
 |===============
