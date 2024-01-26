@@ -24,13 +24,13 @@ The netCDF file for PWS data has two dimensions: a time stamp (time) and a PWS i
 
 | *Auxiliary coordinate variables (dimension)*| | | | 
 
-| latitude (id)| float/double| units = degrees in WGS84 projection| Required| 
+| lat (id)| float/double| units = degrees_in_WGS84_projection, long_name = “latitude”| Required| 
 
-| longitude (id)| float/double| units = degrees in WGS84 projection| Required| 
+| lon (id)| float/double| units = degrees_in_WGS84_projection, long_name = “latitude”| Required| 
 
-| elevation (id)| float/double| units = metres_above_sea| Recommended| 
+| elev (id)| float/double| units = metres_above_sea, long_name = “ground_elevation_above_sea_level”| Recommended| 
 
-| Height_above ground_level (id)| float/double| units = metres| Recommended| 
+| Height_above_ground_level (id)| float/double| units = metres| Recommended| 
 
 | Environmental_class (id)| integer| no unit| Recommended| 
 
