@@ -19,10 +19,10 @@ The form of specifications is inspired by  https://github.com/cf-convention/cf-c
 AsciiDoc format is a plaintext format which is easy to write and easy to parse. There are many tools to convert it to other formats such as html or pdf and GitHub can automaticaly preview it. 
 
 ## Usage
-Preview adoc files on gitHub webpagesite or fork it/download it and open it in any plain text editor.
+Preview adoc files on GitHub webpagesite or fork it/download it and open it in any plain text editor.
 
 #### Data
-We use the [OpenMRG dataset](https://doi.org/10.5194/essd-14-5411-2022) as CML exampele data and PWS data from an dataset of [Amsterdam and the 
+We use the [OpenMRG dataset](https://doi.org/10.5194/essd-14-5411-2022) as CML example data and PWS data from a dataset of [Amsterdam and the 
 Netherlands](https://data.4tu.nl/articles/dataset/Rainfall_observations_datasets_from_Personal_Weather_Stations/12703250). Example notebooks show how to bring these datasets into the proposed data formats. This accompanies a white paper on standards and convetions for opportunisitic sensor data which can be found here: [to be released ...](https://opensenseaction.eu/)
 
 #### Usage
