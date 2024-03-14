@@ -23,7 +23,7 @@ Preview adoc files on the GitHub website or fork/download the repository and ope
 
 #### Data
 We use the [OpenMRG dataset](https://doi.org/10.5194/essd-14-5411-2022) as CML example data and PWS data from a dataset of [Amsterdam and the 
-Netherlands](https://data.4tu.nl/articles/dataset/Rainfall_observations_datasets_from_Personal_Weather_Stations/12703250). Example notebooks show how to bring these datasets into the proposed data formats. This accompanies a white paper on standards and conventions for opportunistic rainfall sensors data, which can be found here: [to be released ...](https://opensenseaction.eu/)
+Netherlands](https://data.4tu.nl/articles/dataset/Rainfall_observations_datasets_from_Personal_Weather_Stations/12703250). Example notebooks show how to bring these datasets into the proposed data formats. This accompanies a white paper on standards and conventions for opportunistic rainfall sensors data, which can be found [published on Open Research Europe](https://open-research-europe.ec.europa.eu/articles/3-169).
 
 #### Usage
 You can easily explore the datasets and the transformation by clicking on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/OpenSenseAction/OS_data_format_conventions/HEAD)
